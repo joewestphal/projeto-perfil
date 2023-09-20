@@ -25,7 +25,8 @@
 }
 
 body {
-  background: var(--bg-color) no-repeat top center / cover;
+  background: var(--bg-color) no-repeat top center/cover;
+  height: 100vh;
 }
 
 body * {
@@ -141,4 +142,14 @@ ul li a:hover {
 footer {
   padding: 24px 0;
   text-align: center;
+}
+
+@media (min-width: 700px) {
+  :root {
+    --bg-color: url(./assets/bg-desktop.jpg);
+  }
+
+  .light {
+    --bg-color: url(./assets/bg-desktop-light.jpg);
+  }
 }
